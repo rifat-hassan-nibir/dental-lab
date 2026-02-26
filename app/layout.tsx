@@ -4,11 +4,13 @@ import "./globals.css";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-bricolage",
 });
 
 const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-inter",
 });
 
@@ -24,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${bricolage.variable} ${inter.variable}`}>
-      <body className="antialiased font-inter">{children}</body>
+      <body className="antialiased font-bricolage">{children}</body>
     </html>
   );
 }
