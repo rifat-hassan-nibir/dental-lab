@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-bricolage: var(--font-bricolage);
+}
+
+:root {
+  --font-main: var(--font-inter);
+  --font-heading: var(--font-bricolage);
+}
+
+body {
+  font-family: var(--font-main), sans-serif;
+  @apply antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+}
