@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @theme {
+  /* fonts */
   --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-bricolage: var(--font-bricolage), sans-serif;
+
+  /* colors */
+  --color-primary: #f22a21;
 }
 
 body {
