@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import { topbarInfo } from "@/constants";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 export default function Topbar() {
@@ -7,38 +8,31 @@ export default function Topbar() {
       <div className="flex gap-4 items-center">
         <div className="flex gap-1 items-center">
           <MapPin size={20} />
-          <p className="text-[14px] font-semibold">New York | Florida</p>
+          <p className="text-[14px] font-semibold">{topbarInfo.location.location}</p>
         </div>
 
         <div className="w-px h-7 bg-gray-200" />
 
         <div className="flex gap-1 items-center">
           <Phone size={20} />
-          <p className="text-[14px] font-semibold">+1 234 567 890</p>
+          <p className="text-[14px] font-semibold">{topbarInfo.phone.phoneNumber}</p>
         </div>
       </div>
 
       <div className="flex gap-4 items-center">
         <div className="flex gap-1 items-center">
-          <Mail size={20} />
-          <p className="text-[14px] font-semibold">info.ny@dentallab.com</p>
+          {<topbarInfo.email.icon size={20} />}
+          <p className="text-[14px] font-semibold">{topbarInfo.email.mailId}</p>
         </div>
 
         <div className="w-px h-7 bg-gray-200" />
 
         <div className="flex gap-3 items-center">
-          <Link href="#">
-            <Linkedin size={20} />
-          </Link>
-          <Link href="#">
-            <Facebook size={20} />
-          </Link>
-          <Link href="#">
-            <Instagram size={20} />
-          </Link>
-          <Link href="#">
-            <Youtube size={20} />
-          </Link>
+          {topbarInfo.socialLinks.map((link, index) => (
+            <Link href={link.link} key={index}>
+              <link.icon size={20} />
+            </Link>
+          ))}
         </div>
       </div>
     </div>
