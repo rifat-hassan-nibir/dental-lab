@@ -1,5 +1,5 @@
 import { MoveRight } from "lucide-react";
-import Button from "../common/ui/Button";
+import Button from "../../common/ui/Button";
 import ImageSlider from "./ImageSlider";
 
 export default function Hero() {
