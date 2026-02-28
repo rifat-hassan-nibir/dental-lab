@@ -37,9 +37,6 @@ export default function ImageSlider() {
         .animate-infinite-scroll {
           animation: infiniteScroll 40s linear infinite;
         }
-        .animate-infinite-scroll:hover {
-          animation-play-state: paused;
-        }
       `}</style>
     </div>
   );
