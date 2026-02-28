@@ -10,7 +10,9 @@ export default function SectionTitle({
   className?: string;
 }) {
   return (
-    <div className="flex flex-col gap-3 lg:gap-4">
+    <div
+      className={`flex flex-col gap-3 lg:gap-4 ${!isCenter && "pl-0 md:pl-0 lg:pl-0"} "pl-6 md:pl-10 lg:pl-0 pr-6 md:pr-10 lg:pr-0"}`}
+    >
       <h2
         className={`text-[32px] md:text-[36px] lg:text-[40px] xl:text-5xl font-semibold leading-tight ${isCenter ? "text-center" : "text-left"} ${isCenter ? "md:w-175" : ""} ${isCenter ? "mx-auto" : ""} ${className}`}
       >
