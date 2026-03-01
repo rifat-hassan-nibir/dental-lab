@@ -19,7 +19,7 @@ export default function SectionTitle({
         {title}
       </h2>
       <p
-        className={`text-paragraph text-base lg:text-[18px] font-normal leading-normal ${isCenter ? "text-center" : "text-left"} ${isCenter ? "md:w-150" : ""} ${isCenter ? "mx-auto" : ""} ${className}`}
+        className={`font-inter text-paragraph text-base lg:text-[18px] font-normal leading-normal ${isCenter ? "text-center" : "text-left"} ${isCenter ? "md:w-150" : ""} ${isCenter ? "mx-auto" : ""} ${className}`}
       >
         {description}
       </p>
