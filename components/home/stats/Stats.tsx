@@ -37,7 +37,7 @@ export default function Stats() {
           {statsData.map((stat, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 md:p-8 lg:p-10 hover:bg-white/50 transition-all duration-300"
+              className="bg-white rounded-xl p-6 md:p-8 lg:p-10 shadow-lg shadow-gray-200 hover:bg-white/50 transition-all duration-300"
             >
               <h4 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold leading-normal text-black">
                 {stat.title}

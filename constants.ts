@@ -1,4 +1,16 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import {
+  CreditCard,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Smile,
+  Sparkles,
+  Target,
+  Youtube,
+} from "lucide-react";
 
 export const topbarInfo = {
   location: {
@@ -71,20 +83,24 @@ export const featuresData = [
     title: "Your First Case, Backed by $150 Credit",
     description:
       "Whether it’s a single crown or a full-mouth restoration, your first case comes with a $150 lab credit!!!",
+    icon: CreditCard,
   },
   {
     title: "Cosmetic Excellence",
     description:
       "Enhance smiles with advanced cosmetic dentistry solutions, including veneers, whitening, and aesthetic contouring designed for natural, confident results.",
+    icon: Sparkles,
   },
   {
     title: "High-Precision Restorations",
     description:
       "Restore function and aesthetics with meticulously crafted crowns, bridges, and implants using cutting-edge technology for long-lasting durability.",
+    icon: Target,
   },
   {
     title: "All-on-X Specialists",
     description:
       "Transform full-arch tooth replacement with customized All-on-X implant solutions, delivering stability, comfort, and a fully restored smile in fewer visits.",
+    icon: Smile,
   },
 ];
