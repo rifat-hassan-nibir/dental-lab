@@ -1,7 +1,8 @@
 import Badge from "@/components/common/ui/Badge";
 import { featuresData } from "@/constants";
-import { Network } from "lucide-react";
+import { ArrowBigRight, MoveRight, Network } from "lucide-react";
 import SectionTitle from "../../common/ui/SectionTitle";
+import Button from "@/components/common/ui/Button";
 
 export default function OurFeatures() {
   return (
@@ -18,6 +19,14 @@ export default function OurFeatures() {
             description="Cosmetic excellence, high-precision restorations, and All-on-X expertise, everything crafted with care and technical mastery."
             isCenter={false}
           />
+
+          <div className="mt-4 lg:mt-6">
+            <Button>
+              <div className="flex items-center gap-2">
+                Get $150 Free Credit <MoveRight />
+              </div>
+            </Button>
+          </div>
         </div>
 
         <div className="lg:w-[60%] grid grid-cols-1 gap-3 md:gap-4 w-full bg-light-gray rounded-xl p-5 md:p-6">
