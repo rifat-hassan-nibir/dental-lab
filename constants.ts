@@ -104,3 +104,21 @@ export const featuresData = [
     icon: Smile,
   },
 ];
+
+export const statsData = [
+  {
+    title: "1,700+",
+    description:
+      "Dentists trust us for exceptional quality, reliable service, and lasting partnerships",
+  },
+  {
+    title: "900,000+",
+    description:
+      "Restorations delivered with precision and care—trusted by leading dentists nationwide",
+  },
+  {
+    title: "62%",
+    description:
+      "Cases Submitted Digitally — Trusted by Tech-Forward Practices Using iTero, TRIOS, Medit, and More",
+  },
+];
