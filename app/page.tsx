@@ -1,3 +1,4 @@
+import AboutUs from "@/components/home/about-us/AboutUs";
 import Hero from "@/components/home/hero/Hero";
 import OurFeatures from "@/components/home/our-features/OurFeatures";
 import Stats from "@/components/home/stats/Stats";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <OurFeatures />
       <Stats />
+      <AboutUs />
     </main>
   );
 }

@@ -1,63 +1,8 @@
 import Badge from "@/components/common/ui/Badge";
 import SectionTitle from "@/components/common/ui/SectionTitle";
+import { partners, technicians } from "@/constants";
 import { Building2, FlaskConical, Users } from "lucide-react";
 import Image from "next/image";
-
-const partners = [
-  {
-    name: "ClearChoice Dental",
-    role: "Implant Specialist Partner",
-    location: "New York, NY",
-  },
-  {
-    name: "Smile Studio Group",
-    role: "Cosmetic Dentistry Partner",
-    location: "Miami, FL",
-  },
-  {
-    name: "ProSmile Clinics",
-    role: "Full-Service Dental Partner",
-    location: "Los Angeles, CA",
-  },
-  {
-    name: "DentaMax Centers",
-    role: "Multi-Location Partner",
-    location: "Chicago, IL",
-  },
-];
-
-const technicians = [
-  {
-    name: "James Harlow",
-    specialty: "Crown & Bridge Specialist",
-    experience: "14 yrs",
-  },
-  {
-    name: "Sofia Reyes",
-    specialty: "Cosmetic Ceramist",
-    experience: "10 yrs",
-  },
-  {
-    name: "David Kim",
-    specialty: "Implant Prosthetist",
-    experience: "12 yrs",
-  },
-  {
-    name: "Amara Nwosu",
-    specialty: "All-on-X Expert",
-    experience: "9 yrs",
-  },
-  {
-    name: "Thomas Vega",
-    specialty: "Digital Scanning Lead",
-    experience: "8 yrs",
-  },
-  {
-    name: "Rachel Chen",
-    specialty: "Removable Prosthetics",
-    experience: "11 yrs",
-  },
-];
 
 export default function AboutUs() {
   return (
@@ -68,18 +13,18 @@ export default function AboutUs() {
           <Badge icon={<Users className="w-4 h-4" />} title="About Us" />
           <SectionTitle
             title="Built on Trust, Driven by Craft"
-            description="Behind every restoration is a team of passionate professionals and a network of dedicated partners who share one goal — your patient's perfect smile."
+            description="We are a full-service dental laboratory committed to delivering high-quality, state-of-the-art dental restorations with exceptional value."
             isCenter={true}
           />
         </div>
 
         {/* ─── Our Partners ─── */}
-        <div className="mb-16 md:mb-20 xl:mb-28">
+        <div className="mb-16">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Image */}
-            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-[4/3]">
+            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3">
               <Image
-                src="/assets/dental_partners.png"
+                src="/assets/home/about-us/dental_partners.png"
                 alt="Our dental partners"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -120,7 +65,7 @@ export default function AboutUs() {
                 {partners.map((partner, index) => (
                   <div
                     key={index}
-                    className="bg-light-gray hover:bg-primary/5 transition-colors duration-300 rounded-xl p-4 border border-transparent hover:border-primary/15 cursor-default"
+                    className="bg-light-gray rounded-xl p-4 border border-transparent cursor-default"
                   >
                     <p className="text-[15px] font-bold text-black leading-tight mb-0.5">
                       {partner.name}
@@ -135,14 +80,14 @@ export default function AboutUs() {
         </div>
 
         {/* Divider */}
-        <div className="w-full h-px bg-light-gray mb-16 md:mb-20 xl:mb-28" />
+        <div className="w-full h-px bg-light-gray mb-16" />
 
         {/* ─── Our Technicians ─── */}
         <div>
           <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 xl:gap-16 items-center">
-            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-[4/3]">
+            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3">
               <Image
-                src="/assets/dental_technicians.png"
+                src="/assets/home/about-us/dental_technicians.png"
                 alt="Our dental lab technicians"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -184,10 +129,10 @@ export default function AboutUs() {
                 {technicians.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 bg-light-gray hover:bg-primary/5 transition-colors duration-300 rounded-xl p-4 border border-transparent hover:border-primary/15 cursor-default group"
+                    className="flex items-center gap-3 bg-light-gray rounded-xl p-4 border border-transparent cursor-default group"
                   >
                     {/* Avatar placeholder */}
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[15px] shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[15px] shrink-0 transition-colors duration-300">
                       {tech.name.charAt(0)}
                     </div>
                     <div className="min-w-0">
