@@ -12,6 +12,8 @@ import {
   Youtube,
 } from "lucide-react";
 
+// Topbar
+
 export const topbarInfo = {
   location: {
     icon: MapPin,
@@ -45,6 +47,8 @@ export const topbarInfo = {
   ],
 };
 
+// Header
+
 export const navLinks = [
   {
     title: "Products",
@@ -68,15 +72,19 @@ export const navLinks = [
   },
 ];
 
-export const images = [
-  "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=800",
+// Hero
+
+export const heroImages = [
+  "/assets/home/hero/slide-1.jpeg",
+  "/assets/home/hero/slide-2.jpeg",
+  "/assets/home/hero/slide-3.jpeg",
+  "/assets/home/hero/slide-4.jpeg",
+  "/assets/home/hero/slide-5.jpeg",
+  "/assets/home/hero/slide-6.jpeg",
+  "/assets/home/hero/slide-7.jpeg",
 ];
+
+// Our Features
 
 export const featuresData = [
   {
@@ -105,6 +113,8 @@ export const featuresData = [
   },
 ];
 
+// Stats
+
 export const statsData = [
   {
     title: "1,700+",
@@ -120,5 +130,63 @@ export const statsData = [
     title: "62%",
     description:
       "Cases Submitted Digitally — Trusted by Tech-Forward Practices Using iTero, TRIOS, Medit, and More",
+  },
+];
+
+// About Us
+
+export const partners = [
+  {
+    name: "ClearChoice Dental",
+    role: "Implant Specialist Partner",
+    location: "New York, NY",
+  },
+  {
+    name: "Smile Studio Group",
+    role: "Cosmetic Dentistry Partner",
+    location: "Miami, FL",
+  },
+  {
+    name: "ProSmile Clinics",
+    role: "Full-Service Dental Partner",
+    location: "Los Angeles, CA",
+  },
+  {
+    name: "DentaMax Centers",
+    role: "Multi-Location Partner",
+    location: "Chicago, IL",
+  },
+];
+
+export const technicians = [
+  {
+    name: "James Harlow",
+    specialty: "Crown & Bridge Specialist",
+    experience: "14 yrs",
+  },
+  {
+    name: "Sofia Reyes",
+    specialty: "Cosmetic Ceramist",
+    experience: "10 yrs",
+  },
+  {
+    name: "David Kim",
+    specialty: "Implant Prosthetist",
+    experience: "12 yrs",
+  },
+  {
+    name: "Amara Nwosu",
+    specialty: "All-on-X Expert",
+    experience: "9 yrs",
+  },
+  {
+    name: "Thomas Vega",
+    specialty: "Digital Scanning Lead",
+    experience: "8 yrs",
+  },
+  {
+    name: "Rachel Chen",
+    specialty: "Removable Prosthetics",
+    experience: "11 yrs",
   },
 ];
