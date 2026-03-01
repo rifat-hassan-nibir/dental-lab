@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { images } from "@/constants";
+import { heroImages } from "@/constants";
 
 export default function ImageSlider() {
   // Triple the images to ensure seamless looping
-  const duplicatedImages = [...images, ...images, ...images];
+  const duplicatedImages = [...heroImages, ...heroImages, ...heroImages];
 
   return (
     <div className="w-full overflow-hidden pt-10 md:pt-14 lg:pt-16 xl:pt-20 pb-10 md:pb-14 lg:pb-16 xl:pb-25">
