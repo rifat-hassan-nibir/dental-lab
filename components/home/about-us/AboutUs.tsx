@@ -41,7 +41,14 @@ export default function AboutUs() {
       <div className="body-container">
         {/* Section Header */}
         <div className="flex flex-col items-center mb-12 md:mb-16 xl:mb-20">
-          <Badge icon={<Users className="w-4 h-4" />} title="About Us" />
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Badge icon={<Users className="w-4 h-4" />} title="About Us" />
+          </motion.div>
           <SectionTitle
             title="Built on Trust, Driven by Craft"
             description="We are a full-service dental laboratory committed to delivering high-quality, state-of-the-art dental restorations with exceptional value."
