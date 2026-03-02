@@ -2,7 +2,7 @@
 
 import Badge from "@/components/common/ui/Badge";
 import SectionTitle from "@/components/common/ui/SectionTitle";
-import { partners, technicians } from "@/constants";
+import { aboutUsData, partners, technicians } from "@/constants";
 import { Building2, FlaskConical, Users } from "lucide-react";
 import * as motion from "motion/react-client";
 import Image from "next/image";
@@ -68,7 +68,7 @@ export default function AboutUs() {
               className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
             >
               <Image
-                src="/assets/home/about-us/dental_partners.png"
+                src={aboutUsData[0].image}
                 alt="Our dental partners"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
@@ -97,16 +97,13 @@ export default function AboutUs() {
               <div className="mb-5">
                 <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
                   <Building2 className="w-3.5 h-3.5" />
-                  Our Partners
+                  {aboutUsData[0].subTitle}
                 </span>
                 <h3 className="text-[24px] md:text-[30px] lg:text-[34px] font-bold text-black leading-tight mb-3">
-                  Partnered with the Nation's Leading Dental Practices
+                  {aboutUsData[0].title}
                 </h3>
                 <p className="font-inter text-paragraph text-[15px] md:text-[16px] leading-relaxed">
-                  We collaborate with forward-thinking dental practices across the country — from
-                  boutique cosmetic studios to large multi-location groups. Our partners rely on us
-                  for consistent quality, fast turnarounds, and the technical expertise to handle
-                  any case.
+                  {aboutUsData[0].description}
                 </p>
               </div>
 
@@ -179,15 +176,13 @@ export default function AboutUs() {
               <div className="mb-5">
                 <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
                   <FlaskConical className="w-3.5 h-3.5" />
-                  Our Technicians
+                  {aboutUsData[1].subTitle}
                 </span>
                 <h3 className="text-[24px] md:text-[30px] lg:text-[34px] font-bold text-black leading-tight mb-3">
-                  Master Craftspeople Behind Every Restoration
+                  {aboutUsData[1].title}
                 </h3>
                 <p className="font-inter text-paragraph text-[15px] md:text-[16px] leading-relaxed">
-                  Our certified dental technicians bring decades of combined expertise in crown and
-                  bridge, implant prosthetics, cosmetic ceramics, and digital workflows. Every case
-                  is handcrafted with precision, passion, and an unwavering attention to detail.
+                  {aboutUsData[1].description}
                 </p>
               </div>
 

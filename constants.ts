@@ -144,6 +144,23 @@ export const statsData = [
 
 // About Us
 
+export const aboutUsData = [
+  {
+    subTitle: "Our Partners",
+    title: "Partnered with the Nation's Leading Dental Practices",
+    description:
+      "We work closely with dentists who demand excellence in materials, results, and ongoing support. From zirconia and lithium disilicate to PEEK and titanium bars, we use only clinically proven materials from trusted brands to ensure every restoration meets the highest standards. Beyond restorations, we invest in your growth. Our CE-accredited courses and clinical resources help partners stay current with the latest techniques in digital dentistry, full-arch restorations, and material selection.",
+    image: "/assets/home/about-us/dental_partners.png",
+  },
+  {
+    subTitle: "Our Technicians",
+    title: "Master Craftspeople Behind Every Restoration",
+    description:
+      "Our certified dental technicians bring decades of combined expertise in crown and bridge, implant prosthetics, cosmetic ceramics, and digital workflows. Every case is handcrafted with precision, passion, and an unwavering attention to detail.",
+    image: "/assets/home/about-us/dental_technicians.png",
+  },
+];
+
 export const partners = [
   {
     name: "ClearChoice Dental",
