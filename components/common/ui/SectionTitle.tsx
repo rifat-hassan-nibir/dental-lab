@@ -15,7 +15,7 @@ export default function SectionTitle({
 }) {
   return (
     <div
-      className={`flex flex-col gap-3 lg:gap-4 ${!isCenter ? "pl-0 md:pl-0 lg:pl-0" : "pl-6 md:pl-10 lg:pl-0 pr-6 md:pr-10 lg:pr-0"}`}
+      className={`flex flex-col gap-3 lg:gap-4 ${!isCenter ? "pl-0 md:pl-0 lg:pl-0" : "pl-2 md:pl-10 lg:pl-0 pr-2 md:pr-10 lg:pr-0"}`}
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
