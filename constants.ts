@@ -323,3 +323,40 @@ export const testimonialsData = [
     initials: "RN",
   },
 ];
+
+// Footer Links
+export const footerLinks = [
+  {
+    heading: "Services",
+    links: [
+      { title: "Fixed Products", href: "#" },
+      { title: "Implants", href: "#" },
+      { title: "Removables", href: "#" },
+      { title: "Retainers", href: "#" },
+    ],
+  },
+  {
+    heading: "Company",
+    links: [
+      { title: "About Us", href: "#" },
+      { title: "Our Technicians", href: "#" },
+      { title: "Latest Cases", href: "#" },
+      { title: "Workflow", href: "#" },
+    ],
+  },
+  {
+    heading: "Support",
+    links: [
+      { title: "Contact Us", href: "#" },
+      { title: "FAQ", href: "#" },
+      { title: "Educational Resources", href: "#" },
+      { title: "Get a Quote", href: "#" },
+    ],
+  },
+];
+
+export const bottomBarLinks = [
+  { title: "Shipping & Logistics", href: "#" },
+  { title: "Remarks & Warranties", href: "#" },
+  { title: "Technical Support", href: "#" },
+];
