@@ -156,7 +156,7 @@ export const aboutUsData = [
     subTitle: "Our Technicians",
     title: "Master Craftspeople Behind Every Restoration",
     description:
-      "Our certified dental technicians bring decades of combined expertise in crown and bridge, implant prosthetics, cosmetic ceramics, and digital workflows. Every case is handcrafted with precision, passion, and an unwavering attention to detail.",
+      "Our technicians are certified experts with extensive training in digital design, esthetic restorations, and full-arch workflows. With a deep understanding of clinical priorities, they approach every case with precision, consistency, and a commitment to excellence. Through continuous education and collaboration with doctors, they ensure restorations are delivered ready to seat reducing chair time and elevating the quality of every outcome.",
     image: "/assets/home/about-us/dental_technicians.png",
   },
 ];
