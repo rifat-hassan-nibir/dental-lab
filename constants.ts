@@ -272,3 +272,54 @@ export const ourProductsData = [
     ],
   },
 ];
+
+export const testimonialsData = [
+  {
+    name: "Dr. Sarah Mitchell",
+    practice: "Mitchell Cosmetic Dentistry",
+    location: "New York, NY",
+    rating: 5,
+    text: "I've been working with this lab for over 4 years and the quality is consistently exceptional. My patients are always thrilled with the results — the ceramic work looks completely natural.",
+    initials: "SM",
+  },
+  {
+    name: "Dr. James Okafor",
+    practice: "Okafor Family Dental",
+    location: "Houston, TX",
+    rating: 5,
+    text: "The turnaround times are incredible and the fit on their crowns is spot-on every single time. Switching to this lab was one of the best decisions I've made for my practice.",
+    initials: "JO",
+  },
+  {
+    name: "Dr. Elena Vasquez",
+    practice: "Vasquez Implant Center",
+    location: "Miami, FL",
+    rating: 5,
+    text: "Their All-on-X work is in a class of its own. As a specialist, I need absolute precision and this lab delivers every time. My patients love their new smiles.",
+    initials: "EV",
+  },
+  {
+    name: "Dr. Michael Chen",
+    practice: "Premier Dental Group",
+    location: "Los Angeles, CA",
+    rating: 5,
+    text: "The digital workflow integration with my iTero scanner is seamless. Cases go from scan to delivery faster than I ever thought possible without sacrificing an ounce of quality.",
+    initials: "MC",
+  },
+  {
+    name: "Dr. Priya Sharma",
+    practice: "Smile Studio Dental",
+    location: "Chicago, IL",
+    rating: 5,
+    text: "Outstanding customer service and incredible attention to detail. Whenever I have a complex cosmetic case, I know I can count on this team to deliver something beautiful.",
+    initials: "PS",
+  },
+  {
+    name: "Dr. Robert Nguyen",
+    practice: "Nguyen Restorative Dentistry",
+    location: "Dallas, TX",
+    rating: 5,
+    text: "The $150 first-case credit got me through the door, but the quality of their work is what made me stay. Over 200 cases later and I wouldn't trust anyone else.",
+    initials: "RN",
+  },
+];
