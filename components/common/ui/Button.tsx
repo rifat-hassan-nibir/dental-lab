@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 export default function Button({
   children,
   className,
@@ -9,7 +11,10 @@ export default function Button({
 }) {
   return (
     <button
-      className={`hover:cursor-pointer bg-primary text-white px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-semibold rounded-lg transition-all duration-300 hover:opacity-90 hover:scale-102 shadow-md hover:shadow-lg ${className}`}
+      className={cn(
+        "flex justify-center items-center bg-primary text-white px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-semibold rounded-lg transition-all duration-300 hover:opacity-90 hover:scale-102 shadow-md hover:shadow-lg hover:cursor-pointer",
+        className,
+      )}
       onClick={onClick}
     >
       {children}
