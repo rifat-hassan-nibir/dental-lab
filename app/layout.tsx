@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import Header from "../components/common/header/Header";
-import Footer from "@/components/home/footer/Footer";
 import "./globals.css";
+import Header from "@/components/common/header/Header";
+import Footer from "@/components/common/footer/Footer";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
