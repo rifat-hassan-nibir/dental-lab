@@ -145,7 +145,7 @@ export default function AboutUs() {
               className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
             >
               <Image
-                src="/assets/home/about-us/dental_technicians.png"
+                src={aboutUsData[1].image}
                 alt="Our dental lab technicians"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
