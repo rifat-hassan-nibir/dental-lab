@@ -1,10 +1,41 @@
+"use client";
+
 import Badge from "@/components/common/ui/Badge";
 import SectionTitle from "@/components/common/ui/SectionTitle";
 import { partners, technicians } from "@/constants";
 import { Building2, FlaskConical, Users } from "lucide-react";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 
 export default function AboutUs() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  const imageVariants = (direction: "left" | "right") => ({
+    hidden: { opacity: 0, x: direction === "left" ? -50 : 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8 },
+    },
+  });
+
   return (
     <section className="px-4 py-10 lg:py-16 xl:py-24 overflow-hidden">
       <div className="body-container">
@@ -18,18 +49,23 @@ export default function AboutUs() {
           />
         </div>
 
-        {/* ─── Our Partners ─── */}
+        {/* Our Partners */}
         <div className="mb-16">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Image */}
-            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3">
+            <motion.div
+              variants={imageVariants("left")}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
+            >
               <Image
                 src="/assets/home/about-us/dental_partners.png"
                 alt="Our dental partners"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
-              {/* Floating badge */}
               <div className="absolute bottom-5 left-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
                   <Building2 className="w-4 h-4" />
@@ -41,10 +77,16 @@ export default function AboutUs() {
                   <p className="text-[15px] font-bold text-black leading-tight">1,700+ Dentists</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Content */}
-            <div className="lg:w-1/2 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:w-1/2 w-full"
+            >
               <div className="mb-5">
                 <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
                   <Building2 className="w-3.5 h-3.5" />
@@ -61,10 +103,17 @@ export default function AboutUs() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6"
+              >
                 {partners.map((partner, index) => (
-                  <div
+                  <motion.div
                     key={index}
+                    variants={itemVariants}
                     className="bg-light-gray rounded-xl p-4 border border-transparent cursor-default"
                   >
                     <p className="text-[15px] font-bold text-black leading-tight mb-0.5">
@@ -72,27 +121,31 @@ export default function AboutUs() {
                     </p>
                     <p className="text-[12px] text-primary font-semibold mb-1">{partner.role}</p>
                     <p className="text-[12px] text-paragraph">{partner.location}</p>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="w-full h-px bg-light-gray mb-16" />
 
-        {/* ─── Our Technicians ─── */}
+        {/* Our Technicians */}
         <div>
           <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-12 xl:gap-16 items-center">
-            <div className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3">
+            <motion.div
+              variants={imageVariants("right")}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
+            >
               <Image
                 src="/assets/home/about-us/dental_technicians.png"
                 alt="Our dental lab technicians"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
-              {/* Floating badge */}
               <div className="absolute bottom-5 right-5 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
                   <FlaskConical className="w-4 h-4" />
@@ -106,10 +159,16 @@ export default function AboutUs() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Content */}
-            <div className="lg:w-1/2 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="lg:w-1/2 w-full"
+            >
               <div className="mb-5">
                 <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
                   <FlaskConical className="w-3.5 h-3.5" />
@@ -125,13 +184,19 @@ export default function AboutUs() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6"
+              >
                 {technicians.map((tech, index) => (
-                  <div
+                  <motion.div
                     key={index}
+                    variants={itemVariants}
                     className="flex items-center gap-3 bg-light-gray rounded-xl p-4 border border-transparent cursor-default group"
                   >
-                    {/* Avatar placeholder */}
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[15px] shrink-0 transition-colors duration-300">
                       {tech.name.charAt(0)}
                     </div>
@@ -144,10 +209,10 @@ export default function AboutUs() {
                       </p>
                       <p className="text-[11px] text-paragraph">{tech.experience} exp.</p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>
