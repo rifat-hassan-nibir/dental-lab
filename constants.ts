@@ -216,3 +216,59 @@ export const technicians = [
     experience: "11 yrs",
   },
 ];
+
+// Our Products
+export const ourProductsData = [
+  {
+    id: "fixed",
+    tab: "1. Fixed",
+    icon: "Zap",
+    title: "Fixed Products",
+    description:
+      "Crafted with premium materials sourced from globally renowned manufacturers. Click on the product to discover available material variations.",
+    images: [
+      "/assets/home/our-products/fixed/fixed-1.png",
+      "/assets/home/our-products/fixed/fixed-2.png",
+      "/assets/home/our-products/fixed/fixed-3.png",
+    ],
+  },
+  {
+    id: "implants",
+    tab: "2. Implants",
+    icon: "Layers",
+    title: "Implant Products",
+    description:
+      "Crafted with premium materials sourced from globally renowned manufacturers. Click on the product to discover available material variations.",
+    images: [
+      "/assets/home/our-products/implants/implants-1.png",
+      "/assets/home/our-products/implants/implants-2.png",
+      "/assets/home/our-products/implants/implants-3.png",
+    ],
+  },
+  {
+    id: "removables",
+    tab: "3. Removables",
+    icon: "BookOpen",
+    title: "Removables",
+    description:
+      "Crafted with premium materials sourced from globally renowned manufacturers. Click on the product to discover available material variations.",
+    images: [
+      "/assets/home/our-products/removables/removables-1.png",
+      "/assets/home/our-products/removables/removables-2.png",
+      "/assets/home/our-products/removables/removables-3.png",
+    ],
+  },
+  {
+    id: "retainers",
+    tab: "4. Retainers",
+    icon: "ShieldCheck",
+    title: "Retainers",
+    description:
+      "Retainers are orthodontic appliances designed to maintain teeth in their corrected positions following active orthodontic treatment.",
+    images: [
+      "/assets/home/our-products/retainers/retainers-1.png",
+      "/assets/home/our-products/retainers/retainers-2.png",
+      "/assets/home/our-products/retainers/retainers-3.png",
+    ],
+  },
+];
