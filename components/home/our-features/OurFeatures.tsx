@@ -1,19 +1,38 @@
 import Badge from "@/components/common/ui/Badge";
+import Button from "@/components/common/ui/Button";
 import { featuresData } from "@/constants";
 import { MoveRight, Network } from "lucide-react";
+import * as motion from "motion/react-client";
 import SectionTitle from "../../common/ui/SectionTitle";
-import Button from "@/components/common/ui/Button";
 
 export default function OurFeatures() {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <section className="body-container px-4 py-10 lg:py-16 xl:py-24">
       <div className="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-16 items-start relative">
         <div className="lg:w-[40%] flex flex-col items-start lg:sticky lg:top-32 h-fit">
           {/* Badge */}
-          <Badge
-            icon={<Network className="w-4 h-4 text-paragraph" />}
-            title="Unmatched Precision"
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Badge
+              icon={<Network className="w-4 h-4 text-paragraph" />}
+              title="Unmatched Precision"
+            />
+          </motion.div>
 
           {/* Section Title */}
           <SectionTitle
@@ -23,20 +42,33 @@ export default function OurFeatures() {
           />
 
           {/* Button */}
-          <div className="mt-4 lg:mt-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-4 lg:mt-6"
+          >
             <Button>
               <div className="flex items-center gap-2">
                 Get $150 Free Credit <MoveRight />
               </div>
             </Button>
-          </div>
+          </motion.div>
         </div>
 
         {/* Features */}
-        <div className="lg:w-[60%] grid grid-cols-1 gap-3 md:gap-4 w-full bg-light-gray rounded-xl p-5 md:p-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="lg:w-[60%] grid grid-cols-1 gap-3 md:gap-4 w-full bg-light-gray rounded-xl p-5 md:p-6"
+        >
           {featuresData.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={itemVariants}
               className="relative hover:shadow-lg hover:shadow-gray-200 transition-all duration-300 bg-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-5 lg:gap-6 group border border-transparent hover:border-primary/10"
             >
               {/* Icon */}
@@ -53,9 +85,9 @@ export default function OurFeatures() {
                   {feature.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
