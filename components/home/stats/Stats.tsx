@@ -15,6 +15,7 @@ export default function Stats() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
           className="flex justify-center"
         >
           <Badge icon={<StarIcon className="w-4 h-4" />} title="Our Stats" className="bg-white" />
