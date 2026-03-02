@@ -1,3 +1,5 @@
+"use client";
+
 import Badge from "@/components/common/ui/Badge";
 import Button from "@/components/common/ui/Button";
 import { featuresData } from "@/constants";
