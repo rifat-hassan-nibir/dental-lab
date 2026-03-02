@@ -1,6 +1,8 @@
 import {
+  Ambulance,
   CreditCard,
   Facebook,
+  File,
   Instagram,
   Linkedin,
   Mail,
@@ -8,6 +10,7 @@ import {
   Phone,
   Smile,
   Sparkles,
+  Stethoscope,
   Target,
   Youtube,
 } from "lucide-react";
@@ -117,19 +120,25 @@ export const featuresData = [
 
 export const statsData = [
   {
+    subTitle: "Dentists",
     title: "1,700+",
     description:
       "Dentists trust us for exceptional quality, reliable service, and lasting partnerships",
+    icon: Stethoscope,
   },
   {
+    subTitle: "Total Restorations",
     title: "900,000+",
     description:
       "Restorations delivered with precision and care—trusted by leading dentists nationwide",
+    icon: Ambulance,
   },
   {
+    subTitle: "Cases Submitted",
     title: "62%",
     description:
       "Cases Submitted Digitally — Trusted by Tech-Forward Practices Using iTero, TRIOS, Medit, and More",
+    icon: File,
   },
 ];
 
