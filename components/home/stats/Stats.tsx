@@ -1,3 +1,5 @@
+"use client";
+
 import Badge from "@/components/common/ui/Badge";
 import SectionTitle from "@/components/common/ui/SectionTitle";
 import { statsData } from "@/constants";
@@ -38,10 +40,14 @@ export default function Stats() {
               transition={{ duration: 0.6, delay: index === 0 ? 0.6 : index === 1 ? 0.8 : 1 }}
               className="bg-white rounded-xl p-6 md:p-8 lg:p-10 shadow-lg shadow-gray-200 hover:bg-white/50 transition-all duration-300"
             >
-              <h4 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold leading-normal text-black">
+              <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
+                <stat.icon className="w-3.5 h-3.5" />
+                {stat.subTitle}
+              </span>
+              <h4 className="text-[28px] md:text-[36px] lg:text-[44px] font-semibold leading-tight text-black">
                 {stat.title}
               </h4>
-              <p className="text-paragraph text-[14px] md:text-[16px] leading-relaxed mb-3 md:mb-4 mt-4 lg:mt-6">
+              <p className="text-paragraph text-[14px] md:text-[16px] mb-3 md:mb-4 mt-4 lg:mt-6">
                 {stat.description}
               </p>
             </motion.div>
