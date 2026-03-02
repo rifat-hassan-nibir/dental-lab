@@ -13,7 +13,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <>
+    <div>
       <div className="px-4 sm:px-6 lg:px-8 border-b border-gray-100">
         <Topbar />
       </div>
@@ -21,13 +21,15 @@ export default function Header() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm px-4 sm:px-6 lg:px-8">
         <div className="body-container flex items-center justify-between py-3 md:py-4 lg:py-5">
           <div className="w-auto flex justify-start">
-            <Image
-              src="/assets/logo/logo.svg"
-              width={184}
-              height={48}
-              alt="Logo"
-              className="w-32 md:w-40 lg:w-46 h-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/logo/logo.svg"
+                width={184}
+                height={48}
+                alt="Logo"
+                className="w-32 md:w-40 lg:w-46 h-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -60,6 +62,6 @@ export default function Header() {
       </header>
 
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-    </>
+    </div>
   );
 }
