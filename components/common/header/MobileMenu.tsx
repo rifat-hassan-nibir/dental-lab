@@ -1,7 +1,7 @@
 "use client";
 
 import { navLinks, topbarInfo } from "@/constants";
-import { Mail, MapPin, Phone, X } from "lucide-react";
+import { Mail, MapPin, Phone, UserIcon, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/Button";
@@ -117,7 +117,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
 
         <div className="mt-8 sm:mt-10 md:mt-14">
-          <Button className="w-full py-4 text-lg shadow-lg shadow-primary/20">Get a Quote</Button>
+          <Button className="w-full py-3 text-[16px] shadow-lg shadow-primary/20">
+            <span className="flex items-center gap-2">
+              <UserIcon className="w-4 h-4" /> Dentist Login
+            </span>
+          </Button>
         </div>
       </div>
     </div>
