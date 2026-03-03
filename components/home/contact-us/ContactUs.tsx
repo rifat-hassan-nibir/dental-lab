@@ -26,7 +26,7 @@ export default function ContactUs() {
   }
 
   return (
-    <section className="bg-light-gray px-4 py-10 lg:py-16 xl:py-24">
+    <section id="contact" className="bg-light-gray px-4 py-10 lg:py-16 xl:py-24">
       <div className="body-container">
         {/* ── Section Header ── */}
 

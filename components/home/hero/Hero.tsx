@@ -35,7 +35,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-2 lg:mt-4"
         >
-          <Button>
+          <Button
+            onClick={() =>
+              document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
             <div className="flex items-center gap-2">
               Connect With Us
               <MoveRight />
