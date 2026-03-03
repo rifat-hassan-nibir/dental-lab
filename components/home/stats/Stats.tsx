@@ -39,7 +39,7 @@ export default function Stats() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: index === 0 ? 0.6 : index === 1 ? 0.8 : 1 }}
-              className="bg-white rounded-xl p-6 md:p-8 lg:p-10 shadow-lg shadow-gray-200 hover:bg-white/50 transition-all duration-300"
+              className="bg-white rounded-2xl p-6 md:p-8 lg:p-10 shadow-lg shadow-gray-200 hover:bg-white/50 transition-all duration-300"
             >
               <span className="inline-flex items-center gap-1.5 text-primary text-[13px] font-bold uppercase tracking-widest mb-3">
                 <stat.icon className="w-3.5 h-3.5" />

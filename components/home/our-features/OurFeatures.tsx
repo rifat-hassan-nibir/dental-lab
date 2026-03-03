@@ -65,13 +65,13 @@ export default function OurFeatures() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="lg:w-[60%] grid grid-cols-1 gap-3 md:gap-4 w-full bg-light-gray rounded-xl p-5 md:p-6"
+          className="lg:w-[60%] grid grid-cols-1 gap-3 md:gap-4 w-full bg-light-gray rounded-2xl p-5 md:p-6"
         >
           {featuresData.map((feature, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative hover:shadow-lg hover:shadow-gray-200 transition-all duration-300 bg-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-5 lg:gap-6 group border border-transparent hover:border-primary/10"
+              className="relative hover:shadow-lg hover:shadow-gray-200 transition-all duration-300 bg-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-5 lg:gap-6 group border border-transparent hover:border-primary/10"
             >
               {/* Icon */}
               <div className="shrink-0 w-10 h-10 md:w-14 md:h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
