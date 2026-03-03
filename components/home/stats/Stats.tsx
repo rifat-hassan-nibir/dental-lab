@@ -8,7 +8,7 @@ import * as motion from "motion/react-client";
 
 export default function Stats() {
   return (
-    <section className="bg-light-gray px-4 py-10 lg:py-16 xl:py-24">
+    <section className="bg-light-gray px-4 py-10 lg:py-16 xl:py-24 overflow-hidden">
       <div className="body-container">
         {/* Badge */}
         <motion.div

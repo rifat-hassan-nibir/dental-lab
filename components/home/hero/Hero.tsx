@@ -7,7 +7,7 @@ import ImageSlider from "./ImageSlider";
 
 export default function Hero() {
   return (
-    <section className="bg-light-gray">
+    <section className="bg-light-gray overflow-hidden">
       <div className="body-container px-4 flex flex-col items-center gap-4 lg:gap-5 pt-10 lg:pt-16 xl:pt-20">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

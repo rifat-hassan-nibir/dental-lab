@@ -20,7 +20,7 @@ export default function OurFeatures() {
   };
 
   return (
-    <section className="body-container px-4 py-10 lg:py-16 xl:py-24">
+    <section className="body-container px-4 py-10 lg:py-16 xl:py-24 overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-16 items-start relative">
         <div className="lg:w-[40%] flex flex-col items-start lg:sticky lg:top-32 h-fit">
           {/* Badge */}

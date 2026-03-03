@@ -22,7 +22,7 @@ export default function OurProducts() {
   const activeProduct = ourProductsData[activeTab];
 
   return (
-    <section className="px-4 py-10 lg:py-16 xl:py-24 bg-light-gray">
+    <section className="px-4 py-10 lg:py-16 xl:py-24 bg-light-gray overflow-hidden">
       <div className="body-container">
         {/* ── Section Header ── */}
         <div className="flex flex-col items-center mb-8 md:mb-10">

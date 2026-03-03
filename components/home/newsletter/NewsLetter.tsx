@@ -13,7 +13,7 @@ export default function NewsLetter() {
   }
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-14 lg:py-20">
+    <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-14 lg:py-20 overflow-hidden">
       <div className="body-container">
         <div className="bg-primary/5 shadow-sm rounded-2xl px-4 py-8 md:px-14 md:py-14 flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12">
           {/* Left: Text */}

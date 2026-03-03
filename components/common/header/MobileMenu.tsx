@@ -14,8 +14,8 @@ interface MobileMenuProps {
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div
-      className={`fixed inset-0 z-50 bg-black/40 backdrop-blur-sm transition-opacity duration-300 ${
-        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`fixed inset-0 z-50 bg-black/40 backdrop-blur-sm transition-all duration-300 ${
+        isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
       }`}
       onClick={onClose}
     >
