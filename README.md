@@ -67,42 +67,66 @@ Designed with a user-centric approach, several improvements were implemented to 
 - **What**: Placed critical contact info and social links in a dedicated topbar; applied a glassmorphism effect to the main header.
 - **Why**: To ensure contact details are discoverable instantly while maintaining a modern, professional, and trendy aesthetic.
 
+![Navigation & Header](./public/assets/screenshots/header.png)
+
 ### 2. Hero Section
 
 - **What**: Integrated a primary Call to Action (CTA) that scrolls directly to the lead form and included an auto-playing image slider.
 - **Why**: Improves UX by guiding users toward the conversion goal immediately and visually showcasing the laboratory's craftsmanship.
+
+![Hero Section](./public/assets/screenshots/hero.png)
 
 ### 3. Our Features
 
 - **What**: Organized service highlights into a grid with interactive hover effects and clear iconography.
 - **Why**: Makes the lab's technical advantages (precision, speed, value) easy to scan and digest for busy dental professionals.
 
+![Our Features](./public/assets/screenshots/our-features.png)
+
 ### 4. Stats Section
 
 - **What**: Redesigned as a high-contrast, minimalist section highlighting "Why Top Dentists Trust Us".
 - **Why**: Uses quantitative data (1,700+ partners, 64+ years experience) to establish industry authority and trust within seconds.
+
+![Stats Section](./public/assets/screenshots/stats.png)
 
 ### 5. About Us (Heritage & Team)
 
 - **What**: Split into "Our Partners" and "Our Technicians" with specific credibility badges for experience and reach.
 - **Why**: Humanizes the brand by showcasing the experts behind the restorations and the scale of the dental practices supported.
 
+![About Us](./public/assets/screenshots/about-us.png)
+
 ### 6. Our Products (Services)
 
 - **What**: Implemented a tabbed navigation system for Fixed, Implants, Removables, and Retainers with image galleries.
 - **Why**: Allows for detailed exploration of a comprehensive service catalog without cluttering the screen or overwhelming the user.
+
+![Our Products](./public/assets/screenshots/our-products.png)
 
 ### 7. Testimonials
 
 - **What**: Redesigned as an infinite auto-scrolling slider to showcase nationwide trust.
 - **Why**: Provides continuous social proof in a dynamic, modern format that keeps the page feeling active.
 
+![Testimonials](./public/assets/screenshots/testimonials.png)
+
 ### 8. Contact & Newsletter
 
 - **What**: Created a clean two-column contact layout and a focused newsletter subscription box.
 - **Why**: Reduces friction for direct inquiries and offers a clear value proposition (exclusive lab tips/offers) for joining the mailing list.
 
+![Contact Us](./public/assets/screenshots/contact-us.png)
+![Newsletter](./public/assets/screenshots/newsletter.png)
+
 ### 9. Interactive Experience (Animations)
 
 - **What**: Added consistent `whileInView` entrance animations across every section with optimized viewport triggers.
 - **Why**: Makes the scroll experience feel responsive and "alive," gradually revealing content as the user explores the page.
+
+### 10. Footer Section
+
+- **What**: Clean, informative footer with quick links, contact info, and brand consistency.
+- **Why**: Provides a professional closing to the page, making essential information accessible at all times.
+
+![Footer](./public/assets/screenshots/footer.png)
