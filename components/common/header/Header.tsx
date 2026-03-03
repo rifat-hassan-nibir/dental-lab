@@ -1,7 +1,7 @@
 "use client";
 
 import { navLinks } from "@/constants";
-import { Menu } from "lucide-react";
+import { Menu, UserIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,12 +13,12 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div>
+    <>
       <div className="px-4 sm:px-6 lg:px-8 border-b border-gray-100">
         <Topbar />
       </div>
 
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-50 bg-white/60 backdrop-blur-sm border-b border-gray-100 shadow-sm px-4 sm:px-6 lg:px-8">
         <div className="body-container flex items-center justify-between py-3 md:py-4 lg:py-5">
           <div className="w-auto flex justify-start">
             <Link href="/">
@@ -47,7 +47,11 @@ export default function Header() {
 
           {/* Desktop Button */}
           <div className="hidden lg:flex w-auto justify-end">
-            <Button>Get a Quote</Button>
+            <Button>
+              <span className="flex items-center gap-2">
+                <UserIcon className="w-4 h-4" /> Dentist Login
+              </span>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -62,6 +66,6 @@ export default function Header() {
       </header>
 
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-    </div>
+    </>
   );
 }

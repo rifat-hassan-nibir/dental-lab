@@ -33,19 +33,19 @@ export const topbarInfo = {
   socialLinks: [
     {
       icon: Linkedin,
-      link: "",
+      link: "https://www.linkedin.com/company/dentallab-com/",
     },
     {
       icon: Facebook,
-      link: "",
+      link: "https://www.facebook.com/Ritesmilenetwork",
     },
     {
       icon: Instagram,
-      link: "",
+      link: "https://www.instagram.com/dentallab.com_/",
     },
     {
       icon: Youtube,
-      link: "",
+      link: "https://www.youtube.com/@ritesmiledentallaboratoryn9143",
     },
   ],
 };
