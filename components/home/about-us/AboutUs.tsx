@@ -44,7 +44,7 @@ export default function AboutUs() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
           >
             <Badge icon={<Users className="w-4 h-4" />} title="About Us" />
@@ -64,7 +64,7 @@ export default function AboutUs() {
               variants={imageVariants("left")}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-100px" }}
               className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
             >
               <Image
@@ -90,7 +90,7 @@ export default function AboutUs() {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
               className="lg:w-1/2 w-full"
             >
@@ -111,7 +111,7 @@ export default function AboutUs() {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6"
               >
                 {partners.map((partner, index) => (
@@ -141,7 +141,7 @@ export default function AboutUs() {
               variants={imageVariants("right")}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-100px" }}
               className="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl shadow-gray-200 relative aspect-4/3"
             >
               <Image
@@ -169,7 +169,7 @@ export default function AboutUs() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
               className="lg:w-1/2 w-full"
             >
@@ -190,7 +190,7 @@ export default function AboutUs() {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-100px" }}
                 className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6"
               >
                 {technicians.map((tech, index) => (

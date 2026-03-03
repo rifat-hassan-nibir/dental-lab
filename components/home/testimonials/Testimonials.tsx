@@ -2,7 +2,7 @@
 
 import Badge from "@/components/common/ui/Badge";
 import SectionTitle from "@/components/common/ui/SectionTitle";
-import { MessageSquare, Star } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import * as motion from "motion/react-client";
 import TestimonialSlider from "./TestimonialSlider";
 
@@ -15,7 +15,7 @@ export default function Testimonials() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
           >
             <Badge

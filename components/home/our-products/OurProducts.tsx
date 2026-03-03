@@ -29,7 +29,7 @@ export default function OurProducts() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
           >
             <Badge
@@ -49,7 +49,7 @@ export default function OurProducts() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex justify-center mb-6 md:mb-8"
         >
@@ -78,9 +78,10 @@ export default function OurProducts() {
           <motion.div
             key={activeTab}
             initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.35 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 lg:p-10"
           >
             <div className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10 xl:gap-14 items-start">

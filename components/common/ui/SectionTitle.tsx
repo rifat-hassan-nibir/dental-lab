@@ -29,7 +29,7 @@ export default function SectionTitle({
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
         className={cn(
           "text-[32px] md:text-[36px] lg:text-[40px] xl:text-5xl font-semibold leading-tight text-black",
@@ -42,7 +42,7 @@ export default function SectionTitle({
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6, delay: 0.2 }}
         className={cn(
           "font-inter text-paragraph text-base lg:text-[18px] font-normal leading-normal",
