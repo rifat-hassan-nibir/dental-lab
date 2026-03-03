@@ -13,9 +13,9 @@ export default function NewsLetter() {
   }
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+    <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-14 lg:py-20">
       <div className="body-container">
-        <div className="bg-primary/5 shadow-sm rounded-2xl px-6 py-12 md:px-14 md:py-14 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+        <div className="bg-primary/5 shadow-sm rounded-2xl px-4 py-8 md:px-14 md:py-14 flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 lg:gap-12">
           {/* Left: Text */}
           <div className="flex-1 min-w-0">
             <span className="inline-flex items-center gap-1.5 text-primary text-[12px] font-bold uppercase tracking-widest mb-3">

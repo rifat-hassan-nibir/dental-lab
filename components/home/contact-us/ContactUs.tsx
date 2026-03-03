@@ -121,7 +121,7 @@ export default function ContactUs() {
             transition={{ duration: 0.6 }}
             className="lg:w-[62%] w-full"
           >
-            <div className="bg-white rounded-2xl p-7 md:p-9 shadow-lg shadow-gray-200">
+            <div className="bg-white rounded-2xl p-5 md:p-7 lg:p-9 shadow-lg shadow-gray-200">
               {submitted ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.96 }}

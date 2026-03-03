@@ -57,7 +57,7 @@ export default function AboutUs() {
         </div>
 
         {/* Our Partners */}
-        <div className="mb-16">
+        <div className="mb-8 md:mb-12 lg:mb-14 xl:mb-16">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Image */}
             <motion.div
@@ -132,7 +132,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="w-full h-px bg-light-gray mb-16" />
+        <div className="w-full h-px bg-light-gray mb-8 md:mb-12 lg:mb-14 xl:mb-16" />
 
         {/* Our Technicians */}
         <div>
